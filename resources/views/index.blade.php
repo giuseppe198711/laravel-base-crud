@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+
+  {{-- dopo aver visto la ROUTE INDEX andiamo a stampare gli elementi
+  come sotto prima la parte della tabella co i titoli e poi la parte
+  con gli elementi in questo caso i libri --}}
   <body>
   <table>
     <thead>

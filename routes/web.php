@@ -18,5 +18,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/', 'BookController@index');
+// Route::get('/', 'BookController@index');
+
+// questo comando comprende tutte le nostre rotte racchiuse in un unico comando
 Route::resource('books', 'BookController');
