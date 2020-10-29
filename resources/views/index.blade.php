@@ -5,6 +5,9 @@
     <title></title>
   </head>
 
+  {{-- 1° STEP!!! la index deve mostrare tutti gli elementi che sono sul database
+   e facciamo riferimento al BookController --}}
+
   {{-- dopo aver visto la ROUTE INDEX andiamo a stampare gli elementi
   come sotto prima la parte della tabella co i titoli e poi la parte
   con gli elementi in questo caso i libri --}}

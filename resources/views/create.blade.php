@@ -9,7 +9,14 @@ e facciamo riferimento al BookController --}}
     <title></title>
   </head>
   <body>
-    <form action="{{route('books.store')}}" method="post">
+
+
+    {{-- nel nostro form andremo a mettere la rotta del nostro store in questo
+    caso book.store per poi andare a fare il salvataggio effettivo, lo andiamo a richiamare
+    con il metodo POST in tutte e due method--}}
+    {{-- la create a sua volta spedisce i dati alla store --}}
+    <form action="{{route('books.store')}}" method="POST">
+      {{-- attenzione ad inserire questo token @csrf --}}
       @csrf
       @method('POST')
 
