@@ -52,17 +52,25 @@ e facciamo riferimento al BookController --}}
 
       <div class="">
         <label for="pages">pages</label>
-        <input type="text" name="pages" placeholder="pages">
+        <input type="number" name="pages" placeholder="pages">
       </div>
+
+
+      <div class="">
+        <label for="image">image</label>
+        <input type="text" name="image" placeholder="image">
+      </div>
+
 
       <div class="">
         <label for="year">year</label>
-        <input type="text" name="year" placeholder="year">
+        <input type="date" name="year" placeholder="year">
       </div>
 
       <div class="">
         <input type="submit" name="" value="invia">
       </div>
+
 
     </form>
   </body>

@@ -48,10 +48,13 @@ class BookController extends Controller
      // ci viene iniettato un oggetto request e ha tutti i dati che ci
      // arrivano da form create
     public function store(Request $request)
+    {
+
 
     // il tutto arriva sottoforma di array associativo e lo andiamo a salvare
     // all'interno di una variabile data
         $data = $request->all();
+
       // aggiungiamo la nostra validazione campo per campo
         $request->validate([
           'isbn' => "required|unique:books|max:13",
@@ -59,8 +62,8 @@ class BookController extends Controller
           'author' => "required|max:50",
           'genre' => "required|max:30",
           'edition' => "required|max:50",
-          'description' => "required|2500",
-          'pages' => "required|nteger",
+          'description' => "required",
+          'pages' => "required|integer",
           'image' => "required",
           'year' => "required|date",
         ]);
@@ -96,7 +99,7 @@ class BookController extends Controller
     public function show($id)
     {
        $book = Book::find($id); // SELECT * FROM books WHERE id = $id;
-       return view("show", ["book => $book"]);
+       return view("show", ["book" => $book]);
     }
 
     /**
